@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Login = ({ onGoBack }) => {
   const [errorMessage, setErrorMessage] = useState();
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState('');
 
   return (
     <div className="login">
@@ -12,6 +12,7 @@ const Login = ({ onGoBack }) => {
         placheolder="email"
         value={email}
         onChange={(e) => setEmail(e.currentTarget.value)}
+        data-testid="email-input"
       />
       {errorMessage && <p>{errorMessage}</p>}
       <button className="btn" onClick={() => {
