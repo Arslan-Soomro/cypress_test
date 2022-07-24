@@ -1,0 +1,35 @@
+html, #root, body, .App {
+  width: 100%;
+  height: 100%;
+}
+
+.App, .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: #e4e2e2;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+.btn:active {
+  background-color: #d4d4d4;
+}
+
+.input {
+  padding: 5px;
+  font-size: 15px;
+}
